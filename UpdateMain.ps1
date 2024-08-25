@@ -93,7 +93,8 @@ do
         Invoke-Expression $($WinGetITTechSoftwareScript.Content)
         }
   '8' { cls
-        Show-PCUpdateMain
+        $OldUpdateMenu = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Update/UpdateMain.ps1")
+        Invoke-Expression $($OldUpdateMenu.Content)
         }
  '9' { cls
         $WinGetIndividualSoftwareScripts = Invoke-WebRequest ("")
@@ -210,6 +211,7 @@ do
   {
 
   '1' { cls
+        Install-Script -Name Start-SplashScreen
         $JennPC = Invoke-WebRequest ("https://github.com/osdcloudcline/Update-Scripts/raw/main/GUI-based%20Scripts/System-Specific%20Scripts/Micro%20Form%20Factor/Dell/Optiplex/JENNPC.ps1")
         Invoke-Expression $($JennPC.Content)
         }
