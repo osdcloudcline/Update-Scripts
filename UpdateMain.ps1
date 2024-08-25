@@ -210,7 +210,7 @@ do
   {
 
   '1' { cls
-        $JennPC = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Update/System%20Specific/Dell/Desktops/Micro%20Form%20Factor/Optiplex3060.ps1")
+        $JennPC = Invoke-WebRequest ("https://github.com/osdcloudcline/Update-Scripts/raw/main/GUI-based%20Scripts/System-Specific%20Scripts/Micro%20Form%20Factor/Dell/Optiplex/JENNPC.ps1")
         Invoke-Expression $($JennPC.Content)
         }
   '2' { cls
