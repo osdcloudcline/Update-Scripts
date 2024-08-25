@@ -1,7 +1,7 @@
 $JENNPCprocesses = @(
   @{
     Name = "Processing: Web Browsers"
-    Script = "https://github.com/osdcloudcline/Scripts/raw/main/PowerShell%20Modules/Package%20Providers/Install.ps1"
+    Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Chrome.ps1"
     },
   @{
     Name = "Processing: Cloud Backups"
