@@ -44,5 +44,7 @@ $JENNPCprocesses = @(
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Dell/OS/UpdateOS.ps1"
   }
   )
-
-  Start-SplashScreen -Processes $JENNPCprocesses -MessageHeader "Dell Optiplex 3060 Update Script - $env:computername"
+  $PCManufacturer = (Get-CimInstance -Class Win32_ComputerSystem).Manufacturer
+  $PCModel = (Get-CimInstance -Class Win32_ComputerSystem).Model
+  
+  Start-SplashScreen -Processes $JENNPCprocesses -MessageHeader "Updating: $env:computername - $PCManufacturer $PCModel"
