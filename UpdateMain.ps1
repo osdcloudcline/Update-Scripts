@@ -216,14 +216,17 @@ do
         Invoke-Expression $($JennPC.Content)
         }
   '2' { cls
+        Install-Script -Name Start-SplashScreen
         $ChrisPC = Invoke-WebRequest ("")
         Invoke-Expression $($ChrisPC.Content)
         }
   '3' { cls
+        Install-Script -Name Start-SplashScreen
         $JessLaptop = Invoke-WebRequest ("")
         Invoke-Expression $($JessLaptop.Content)
         }
   '4' { cls
+        Install-Script -Name Start-SplashScreen
         $BryanDesktop = Invoke-WebRequest ("")
         Invoke-Expression $($BryanDesktop.Content)
         }
