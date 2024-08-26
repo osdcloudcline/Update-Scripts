@@ -24,7 +24,7 @@ do
         Show-CLIMenu
         }
   '2' { cls
-        
+        Show-GUIMenu
         }
   '3' { cls
         $OSDMain = Invoke-WebRequest("https://github.com/osdcloudcline/Scripts/raw/main/OSDMain.ps1")
