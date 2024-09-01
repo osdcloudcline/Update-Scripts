@@ -1,6 +1,6 @@
-$CloudBackupssUpgradeLog = "C:\Logs\Upgrades\Software\GUI\$env:computername-CloudBackups.log"
+$CloudBackupsUpgradeLog = "C:\Logs\Upgrades\Software\GUI\$env:computername-CloudBackups.log"
 
-Start-Transcript -Path $CloudBackupssUpgradeLog
+Start-Transcript -Path $CloudBackupsUpgradeLog
 
 winget upgrade --id Dropbox.Dropbox --source winget --force
 
