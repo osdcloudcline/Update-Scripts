@@ -1,11 +1,15 @@
 $HONEYPOTprocesses = @(
   @{
     Name = "Processing: Web Browsers"
-    Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Corporate/Browsers.ps1"
+    Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Honeypot/Browsers.ps1"
     },
   @{
    Name = "Processing: Media Software"
-   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Corporate/Media.ps1"
+   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Honeypot/Media.ps1"
+   },
+  @{
+   Name = "Processing: Utilities Software"
+   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Honeypot/Utilities.ps1"
    },
   @{
   Name = "Processing: OS SYSTEM Software"
@@ -19,7 +23,7 @@ $HONEYPOTprocesses = @(
   Name = "Processing: PowerShell 7.x.x Modules"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/PowerShell/Modules%20-%20version%207.x.x/PowerShell7xModules.ps1"
   },
-    @{
+  @{
   Name = "Processing: PowerShell Providers"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/PowerShell/Providers/PowerShellProviders.ps1"
   },
