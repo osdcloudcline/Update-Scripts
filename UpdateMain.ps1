@@ -142,8 +142,8 @@ do
         Invoke-Expression $($WinGetSTDSoftwareScript.Content)
         }
   '2' { cls
-        $WinGetADVSoftwareScript = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Update/Custom%20Configurations/Advanced/UpdateAdvanced.ps1")
-        Invoke-Expression $($WinGetADVSoftwareScript.Content)
+        $GUIADVUpdateScript = Invoke-WebRequest ("https://github.com/osdcloudcline/Update-Scripts/raw/main/GUI-based%20Scripts/Advanced/AdvancedSoftwareUpdate.ps1")
+        Invoke-Expression $($GUIADVUpdateScript.Content)
         }
   '3' { cls
         $WinGetCORPSoftwareScript = Invoke-WebRequest ("https://github.com/osdcloudcline/Scripts/raw/main/WinGet%20/Update/Custom%20Configurations/Corporate/UpdateCorporate.ps1")
