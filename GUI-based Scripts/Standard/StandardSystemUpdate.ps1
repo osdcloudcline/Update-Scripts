@@ -65,4 +65,4 @@ $STDprocesses = @(
   }
   )
   
-  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Standard System Configuration - Updating: $env:computername"
+  Start-SplashScreen -Processes $STDprocesses -MessageHeader "Standard System Configuration - Updating: $env:computername"
