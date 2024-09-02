@@ -1,6 +1,6 @@
 $UtilitiesUpgradeLog = "C:\Logs\Upgrades\Software\GUI\$env:computername-Utilities.log"
 
-Start-Transcript -Path $RemoteConnectionsUpgradeLog
+Start-Transcript -Path $UtilitiesUpgradeLog
 
 winget upgrade --id 7zip.7zip --source winget --force
 
