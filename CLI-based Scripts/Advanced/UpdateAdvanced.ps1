@@ -32,12 +32,8 @@ pause
 
 Write-Host "Processing upgrade for: Web Browsers..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Chrome = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Browsers/Chrome.ps1")
-Invoke-Expression $($Chrome.Content)
-
-$Firefox = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Browsers/Firefox.ps1")
-Invoke-Expression $($Firefox.Content)
-
+$Browsers = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Browsers.ps1")
+Invoke-Expression $($Browsers.Content)
 
 Write-Host "Processing upgrade for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
 
