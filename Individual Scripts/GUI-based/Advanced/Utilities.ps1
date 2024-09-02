@@ -32,6 +32,10 @@ $PCName = $env:computername
 
 If($PCName -eq "BTDESKTOP"){
 
+$CustomUtilitiesUpgradeLog = "C:\Logs\Upgrades\Software\GUI\$env:computername-CustomUtilities.log"
+
+Start-Transcript -Path $CustomUtilitiesUpgradeLog
+
 winget upgrade --id Crucial.StorageExecutive --source winget --force
 
 }
