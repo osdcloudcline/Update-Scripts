@@ -32,6 +32,6 @@ $PCName = $env:computername
 
 If($PCName -eq "BTDESKTOP"){
 
-
+winget upgrade --id Crucial.StorageExecutive --source winget --force
 
 }
