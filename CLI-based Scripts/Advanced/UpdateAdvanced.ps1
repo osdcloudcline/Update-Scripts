@@ -35,25 +35,11 @@ Write-Host "Processing upgrade for: Web Browsers..." -ForegroundColor DarkBlue -
 $Browsers = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Browsers.ps1")
 Invoke-Expression $($Browsers.Content)
 
+
 Write-Host "Processing upgrade for: Cloud Backup software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$DropBox = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/DropBox.ps1")
-Invoke-Expression $($DropBox.Content)
-
-$GDrive = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/GDrive.ps1")
-Invoke-Expression $($GDrive.Content)
-
-$NextCloudClient = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/NextCloudClient.ps1")
-Invoke-Expression $($NextCloudClient.Content)
-
-$OneDrive = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/OneDrive.ps1")
-Invoke-Expression $($OneDrive.Content)
-
-$UPBR = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/UPBR.ps1")
-Invoke-Expression $($UPBR.Content)
-
-$iCloud = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Cloud%20Backups/iCloud.ps1")
-Invoke-Expression $($iCloud.Content)
+$CloudBackups = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/CloudBackups.ps1")
+Invoke-Expression $($CloudBackups.Content)
 
 
 Write-Host "Processing upgrade for: Dev Tools software..." -ForegroundColor DarkBlue -BackgroundColor White
