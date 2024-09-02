@@ -57,4 +57,4 @@ $ITprocesses = @(
   }
   )
   
-  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Advanced System Configuration - Updating: $env:computername"
+  Start-SplashScreen -Processes $ITprocesses -MessageHeader "IT Tech System Configuration - Updating: $env:computername"
