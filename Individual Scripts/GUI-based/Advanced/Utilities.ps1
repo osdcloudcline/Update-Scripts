@@ -38,4 +38,6 @@ Start-Transcript -Path $CustomUtilitiesUpgradeLog
 
 winget upgrade --id Crucial.StorageExecutive --source winget --force
 
+Stop-Transcript
+
 }
