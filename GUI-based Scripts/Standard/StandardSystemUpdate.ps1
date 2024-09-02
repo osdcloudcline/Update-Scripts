@@ -40,6 +40,10 @@ $STDprocesses = @(
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/Utilities.ps1"
   },
   @{
+  Name = "Processing: Windows Store Apps"
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Standard/WSApps.ps1"
+  },
+  @{
   Name = "Processing: OS SYSTEM Software"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSSoftware.ps1"
   },
