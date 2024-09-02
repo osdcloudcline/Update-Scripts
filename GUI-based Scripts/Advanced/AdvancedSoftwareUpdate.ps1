@@ -61,4 +61,4 @@ $ADVprocesses = @(
   }
   )
   
-  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Updating: $env:computername"
+  Start-SplashScreen -Processes $ADVprocesses -MessageHeader "Advanced System Configuration - Updating: $env:computername"
