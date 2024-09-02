@@ -24,8 +24,8 @@ Write-Host '  - Utilities: 7-Zip, CCleaner, DDU                              ' -
 Write-Host '  - Utilities: Logitech Options, Logitech Unifying Software      ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '  - Utilities: Samsung Magician, Crucial Storage Executive       ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '  - Utilities: Smart Defrag, Wise Registry Cleaner, Rufus        ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '  - Utilities: Windows 11 SDK, ADK, WinPE Add-On                 ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '  - Security: DOWNLOAD ONLY - MalwareBytes, Norton360            ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '  - OS SYSTEM: Mandated OS SYSTEM Software                       ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '  - PowerShell: Providers and Modules 5.1 and 7.x.x              ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '                                                                 ' -BackgroundColor White
 pause
 
