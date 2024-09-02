@@ -30,7 +30,7 @@ Stop-Transcript
 
 $PCName = $env:computername 
 
-If($PCName -eq "BTDESKTOP")}
+If($PCName -eq "BTDESKTOP"){
 
 
 
