@@ -56,11 +56,15 @@ Invoke-Expression $($FileTransfer.Content)
 
 Write-Host "Processing upgrade for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Gaming = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Gaming/Steam.ps1")
+$Gaming = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Gaming.ps1")
 Invoke-Expression $($Gaming.Content)
 
 
 Write-Host "Processing upgrade for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
+
+
+$Media = Invoke-WebRequest("")
+Invoke-Expression $($Media.Content)
 
 $Audacity = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/Audacity.ps1")
 Invoke-Expression $($Audacity.Content)
