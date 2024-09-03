@@ -62,48 +62,8 @@ Invoke-Expression $($Gaming.Content)
 
 Write-Host "Processing upgrade for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-
-$Media = Invoke-WebRequest("")
+$Media = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media.ps1")
 Invoke-Expression $($Media.Content)
-
-$Audacity = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/Audacity.ps1")
-Invoke-Expression $($Audacity.Content)
-
-$FFMPEG = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/FFMPEG.ps1")
-Invoke-Expression $($FFMPEG.Content)
-
-$GIMP = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/GIMP.ps1")
-Invoke-Expression $($GIMP.Content)
-
-$HDVideo = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/HDVideoConverterPro.ps1")
-Invoke-Expression $($HDVideo.Content)
-
-$Handbrake = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/Handbrake.ps1")
-Invoke-Expression $($Handbrake.Content)
-
-$Kodi = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/Kodi.ps1")
-Invoke-Expression $($Kodi.Content)
-
-$MKVToolNix = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/MKVToolNix.ps1")
-Invoke-Expression $($MKVToolNix.Content)
-
-$MakeMKV = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/MakeMKV.ps1")
-Invoke-Expression $($MakeMKV.Content)
-
-$MediaInfo = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/MediaInfo.ps1")
-Invoke-Expression $($MediaInfo.Content)
-
-$MyHarmony = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/MyHarmony.ps1")
-Invoke-Expression $($MyHarmony.Content)
-
-$PowerISO = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/PowerISO.ps1")
-Invoke-Expression $($PowerISO.Content)
-
-$VLCPlayer = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/VLCPlayer.ps1")
-Invoke-Expression $($VLCPlayer.Content)
-
-$iTunes = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Media/iTunes.ps1")
-Invoke-Expression $($iTunes.Content)
 
 
 Write-Host "Processing upgrade for: Productivity software..." -ForegroundColor DarkBlue -BackgroundColor White
