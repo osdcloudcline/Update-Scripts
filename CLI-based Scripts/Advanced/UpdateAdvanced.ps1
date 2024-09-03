@@ -57,8 +57,6 @@ $FileTransfer = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scrip
 Invoke-Expression $($FileTransfer.Content)
 
 
-
-
 Write-Host "Processing upgrade for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
 $Steam = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Gaming/Steam.ps1")
