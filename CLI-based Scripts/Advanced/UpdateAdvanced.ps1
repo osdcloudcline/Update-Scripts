@@ -53,14 +53,10 @@ Invoke-Expression $($GitHubDesktop.Content)
 
 Write-Host "Processing upgrade for: File Transfer software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$FileZilla = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/FileZilla.ps1")
-Invoke-Expression $($FileZilla.Content)
+$FileTransfer = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/FileTransfer.ps1")
+Invoke-Expression $($FileTransfer.Content)
 
-$PuTTY = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/PuTTY.ps1")
-Invoke-Expression $($PuTTY.Content)
 
-$WinSCP = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/File%20Transfer/WinSCP.ps1")
-Invoke-Expression $($WinSCP.Content)
 
 
 Write-Host "Processing upgrade for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
