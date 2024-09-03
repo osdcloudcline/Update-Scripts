@@ -44,11 +44,8 @@ Invoke-Expression $($CloudBackups.Content)
 
 Write-Host "Processing upgrade for: Dev Tools software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$DockerDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Dev%20Tools/DockerDesktop.ps1")
-Invoke-Expression $($DockerDesktop.Content)
-
-$GitHubDesktop = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Dev%20Tools/GitHubDesktop.ps1")
-Invoke-Expression $($GitHubDesktop.Content)
+$DevTools = Invoke-WebRequest("https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/DevTools.ps1")
+Invoke-Expression $($DevTools.Content)
 
 
 Write-Host "Processing upgrade for: File Transfer software..." -ForegroundColor DarkBlue -BackgroundColor White
@@ -59,8 +56,8 @@ Invoke-Expression $($FileTransfer.Content)
 
 Write-Host "Processing upgrade for: Gaming software..." -ForegroundColor DarkBlue -BackgroundColor White
 
-$Steam = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Gaming/Steam.ps1")
-Invoke-Expression $($Steam.Content)
+$Gaming = Invoke-WebRequest("https://github.com/osdcloudcline/upgrade-Scripts/raw/main/Individual%20Scripts/CLI-based/Advanced/Gaming/Steam.ps1")
+Invoke-Expression $($Gaming.Content)
 
 
 Write-Host "Processing upgrade for: Media software..." -ForegroundColor DarkBlue -BackgroundColor White
