@@ -1,1 +1,1 @@
-Get-WindowsUpdate -UpdateType Drivers -AcceptAll -ForceInstall 
+Get-WindowsUpdate -UpdateType Driver -AcceptAll -ForceInstall 
