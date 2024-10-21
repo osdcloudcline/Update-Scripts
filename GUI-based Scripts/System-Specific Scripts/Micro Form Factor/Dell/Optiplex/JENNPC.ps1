@@ -43,6 +43,10 @@ $JENNPCprocesses = @(
   Name = "Processing: Updating Windows"
   Script = "https://github.com/osdcloudcline/Update-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
   }
+   @{
+  Name = "Processing: Updating Windows Drivers"
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
+  }
   )
   
   Start-SplashScreen -Processes $JENNPCprocesses -MessageHeader "Updating: $env:computername"
