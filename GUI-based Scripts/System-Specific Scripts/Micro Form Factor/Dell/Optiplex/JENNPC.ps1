@@ -41,7 +41,7 @@ $JENNPCprocesses = @(
   },
   @{
   Name = "Processing: Updating Windows"
-  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Dell/OS/UpdateOS.ps1"
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
   }
   )
   
