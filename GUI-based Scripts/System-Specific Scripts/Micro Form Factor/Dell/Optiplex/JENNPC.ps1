@@ -29,7 +29,7 @@ $JENNPCprocesses = @(
   },
   @{
   Name = "Processing: OS SYSTEM Software"
-  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/main/Individual%20Scripts/GUI-based/Dell/Micro%20Form%20Factor/Optiplex/3060/JENNPC-OSSYSTEM.ps1"
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSSoftware.ps1"
   },
   @{
   Name = "Processing: Dell Optiplex 3060 Software"
