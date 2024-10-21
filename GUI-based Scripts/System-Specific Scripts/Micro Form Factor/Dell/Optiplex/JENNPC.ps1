@@ -45,7 +45,7 @@ $JENNPCprocesses = @(
   }
    @{
   Name = "Processing: Updating Windows Drivers"
-  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdate.ps1"
+  Script = "https://github.com/osdcloudcline/Update-Scripts/raw/refs/heads/main/Individual%20Scripts/GUI-based/OS%20SYSTEM/OSUpdateDrivers.ps1"
   }
   )
   
