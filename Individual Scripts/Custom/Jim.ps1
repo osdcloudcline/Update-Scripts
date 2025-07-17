@@ -89,40 +89,6 @@ winget install --id Piriform.CCleaner --silent --exact --accept-source-agreement
 winget install --id Wagnardsoft.DisplayDriverUninstaller --silent --exact --accept-source-agreements --accept-source-agreements --force 
 
 Write-Host
-Write-Verbose "Processing: Installing PowerShell Modules on $env:computername..." -Verbose
-
-Install-Module -Name OSD -Force
-Import-Module -Name OSD -Force
-
-Install-Module -Name 7Zip4Powershell -Force
-Import-Module -Name 7Zip4Powershell -Force
-
-Install-Module -Name PSWindowsUpdate -Force
-Import-Module -Name PSWindowsUpdate -Force
-
-$scanstateURL1 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate1.zip"
-$scanstateURL2 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate2.zip"
-$scanstateURL3 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate3.zip"
-$scanstateURL4 = "https://github.com/osdcloudcline/Software/raw/refs/heads/main/Utilities/USMT/scanstate4.zip"
-
-$USMTdestination = "C:\downloads"
-
-$USMTDestination = "C:\USMT"
-
-Write-Host
-Write-Verbose "Processing: Acquiring USMT Scanstate on $env:computername..." -Verbose
-
-Save-WebFile -SourceUrl $scanstateURL1 -DestinationDirectory $USMTdestination
-Save-WebFile -SourceUrl $scanstateURL2 -DestinationDirectory $USMTdestination
-Save-WebFile -SourceUrl $scanstateURL3 -DestinationDirectory $USMTdestination
-Save-WebFile -SourceUrl $scanstateURL4 -DestinationDirectory $USMTdestination
-
-Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate1.zip" -TargetPath $USMTDestination
-Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate2.zip" -TargetPath $USMTDestination
-Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate3.zip" -TargetPath $USMTDestination
-Expand-7Zip -ArchiveFileName "$USMTdestination\scanstate4.zip" -TargetPath $USMTDestination
-
-Write-Host
 Write-Verbose "Processing: Malwarebytes on $env:computername..." -Verbose 
 
 winget install --id Malwarebytes.Malwarebytes --silent --exact --accept-source-agreements --accept-source-agreements --force
