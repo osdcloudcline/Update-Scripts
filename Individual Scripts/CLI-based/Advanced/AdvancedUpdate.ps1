@@ -3,7 +3,7 @@
 
 $Chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 
-$Firefox 
+$Firefox = "C:\Program Files\Mozilla Firefox\firefox.exe"
 
 $DuckDuckGo 
 
