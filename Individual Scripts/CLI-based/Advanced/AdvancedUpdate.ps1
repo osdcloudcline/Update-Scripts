@@ -1,7 +1,7 @@
 # Web Browsers Region
 
 
-$Chrome
+$Chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 
 $Firefox 
 
